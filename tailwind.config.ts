@@ -7,7 +7,22 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "375px",
+      // md: "768px",
+      lg: "1440px",
+      // xl: "1440px",
+    },
+    fontSize: {
+      base: "18px",
+    },
     extend: {
+      colors: {
+        gray: "hsl(229, 8%, 60%)",
+        red: "hsl(0, 94%, 66%)",
+        softBlue: "hsl(231, 69%, 60%)",
+        darkBlue: " hsl(229, 31%, 21%)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
