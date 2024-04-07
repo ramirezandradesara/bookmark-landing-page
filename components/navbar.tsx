@@ -3,6 +3,7 @@ import { navigation } from "@/data/navigations";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,9 +52,10 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button className="bg-red hover:text-red hover:bg-white border-red border-[3px] border-solid text-base uppercase tracking-widest hover:font-semibold text-white py-4 px-10 rounded-md shadow-md sm:hidden md:flex">
-          login
-        </button>
+        {/* TODO: hide in mobile */}
+        <Button variant={"primary"} size={"lg"}>
+          Login
+        </Button>
       </div>
     </nav>
   );

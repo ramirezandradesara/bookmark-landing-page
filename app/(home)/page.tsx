@@ -1,8 +1,11 @@
+import HeroSection from '@/app/sections/heroSection'
 import React from 'react'
 
 const Home = () => {
   return (
-    <div className='font-bold'>Home</div>
+    <>
+      <HeroSection />
+    </>
   )
 }
 

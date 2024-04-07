@@ -1,11 +1,12 @@
-'use client'
+"use client";
 import Navbar from "@/components/navbar";
 import React from "react";
 
-const HomeLayout = () => {
+const HomeLayout = ({ children }) => {
   return (
     <div>
       <Navbar />
+      {children}
     </div>
   );
 };
