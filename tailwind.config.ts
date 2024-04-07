@@ -9,12 +9,12 @@ const config: Config = {
   theme: {
     screens: {
       sm: "375px",
-      // md: "768px",
+      md: "768px",
       lg: "1440px",
-      // xl: "1440px",
+      xl: "1280px",
     },
     fontSize: {
-      base: "18px",
+      base: "14px",
     },
     extend: {
       colors: {
