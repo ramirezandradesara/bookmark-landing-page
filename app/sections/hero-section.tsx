@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="max-w-screen-lg mx-auto my-36 flex gap-5 items-center pl-8">
         {/* text section */}
         <div className="flex flex-col gap-8 w-full">
-          <h1 className="text-[50px] font-semibold text-darkBlue tracking-wide leading-[70px]">
+          <h1 className="text-h1 font-semibold text-darkBlue tracking-wide leading-[70px]">
             A Simple Bookmark Manager
           </h1>
           <p className="text-gray text-lg tracking-wide max-w-[565px] leading-relaxed">

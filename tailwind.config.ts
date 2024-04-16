@@ -19,6 +19,9 @@ const config = {
     extend: {
       fontSize: {
         base: "14px",
+        h1: "50px",
+        h2: "35px"
+
       },
       colors: {
         gray: "hsl(229, 8%, 60%)",
