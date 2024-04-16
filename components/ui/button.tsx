@@ -15,7 +15,7 @@ const buttonVariants = cva(
           "bg-red hover:text-red hover:bg-white border-red uppercase font-medium hover:font-semibold text-white",
         secondary:
           "bg-softBlue text-white hover:bg-white hover:text-softBlue border-softBlue",
-        outline: "bg-white text-gray hover:border-gray hover:bg-white",
+        outline: "bg-[#f5f5f5] text-gray hover:border-gray hover:bg-white",
       },
       size: {
         default: "py-4 px-7",
