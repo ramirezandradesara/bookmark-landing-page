@@ -22,7 +22,7 @@ const config = {
         h1: "50px",
         h2: "35px",
         h3: "30px",
-        h4: "20px",
+        h4: "25px",
       },
       colors: {
         gray: "hsl(229, 8%, 60%)",

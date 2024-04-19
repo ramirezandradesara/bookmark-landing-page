@@ -1,12 +1,12 @@
-type Features = {
+type Feature = {
   id: number;
   feature: string;
   title: string;
   text: string;
   imgSrc: string;
-}[];
+};
 
-export const FEATURES: Features = [
+export const FEATURES: Feature[] = [
   {
     id: 1,
     feature: "Simple Bookmarking",
