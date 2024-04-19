@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .custom-clamp {
+    width: clamp(40vw, 43%, 47vw);
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
