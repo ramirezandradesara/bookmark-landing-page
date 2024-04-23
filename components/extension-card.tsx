@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 const ExtensionCard = ({ extension }: { extension: Extension }) => {
   const { title, minimumVersion, imgSrc } = extension;
   return (
-    <div className="shadow-lg flex flex-col items-center justify-between flex-1 w-full rounded-md">
+    <div className="shadow-lg flex flex-col items-center justify-between flex-1 w-full rounded-2xl">
       <Image
         src={imgSrc}
         alt={"browser logo"}

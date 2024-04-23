@@ -23,6 +23,8 @@ const config = {
         h2: "35px",
         h3: "30px",
         h4: "25px",
+        accordionTitle: "18px",
+        accordionText: "16px"
       },
       colors: {
         gray: "hsl(229, 8%, 60%)",
