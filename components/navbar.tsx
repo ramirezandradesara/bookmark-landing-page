@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { navigation } from "@/data/navigations";
+import { NAVIGATION } from "@/data/navigations";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -41,7 +41,7 @@ const Navbar = () => {
           </button>
         </div>
         <ul className={"flex gap-16 sm:hidden md:flex"}>
-          {navigation.map(({ href, name }, index) => (
+          {NAVIGATION.map(({ href, name }, index) => (
             <li key={index}>
               <Link
                 href={href}
