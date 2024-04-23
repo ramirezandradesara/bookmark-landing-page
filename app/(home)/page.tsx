@@ -3,14 +3,16 @@ import FeaturesSection from "@/app/sections/feature-section";
 import React from "react";
 import ExtensionSection from "../sections/extension-section";
 import FaqSection from "../sections/faq-section";
+import ContactSection from "../sections/contact";
 
 const Home = () => {
   return (
     <>
-      {/* <HeroSection />
+      <HeroSection />
       <FeaturesSection />
-      <ExtensionSection /> */}
+      <ExtensionSection />
       <FaqSection />
+      <ContactSection />
     </>
   );
 };
