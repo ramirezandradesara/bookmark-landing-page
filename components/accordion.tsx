@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import Image from "next/image";
+import { useState } from "react";
 const Accordion = ({
   question,
   answer,
@@ -16,40 +17,22 @@ const Accordion = ({
     >
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
-        className="flex justify-between w-full items-center"
+        className={`flex justify-between w-full items-center mt-5 ${
+          !accordionOpen ? "mb-0" : "mb-5"
+        }`}
       >
-        <p
-          className={`text-accordionTitle font-medium text-left transition-all duration-300 ease-in-out mt-5 ${
-            !accordionOpen ? "mb-0" : "mb-5"
-          }`}
-        >
+        <p className="text-accordionTitle font-medium text-left transition-all duration-300 ease-in-out">
           {question}
         </p>
-        <svg
-          className="fill-indigo-500 shrink-0 ml-6"
-          width="16"
-          height="16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            y="7"
-            width="16"
-            height="2"
-            rx="1"
-            className={`transform origin-center transition duration-200 ease-out ${
-              accordionOpen && "!rotate-180"
-            }`}
-          />
-          <rect
-            y="7"
-            width="16"
-            height="2"
-            rx="1"
-            className={`transform origin-center rotate-90 transition duration-200 ease-out ${
-              accordionOpen && "!rotate-180"
-            }`}
-          />
-        </svg>
+        <Image
+          src={"/images/icon-arrow.svg"}
+          alt="arrow"
+          width={17}
+          height={10}
+          className={`transform origin-center transition duration-200 ease-out ${
+            accordionOpen && "!rotate-180"
+          }`}
+        />
       </button>
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
