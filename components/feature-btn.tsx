@@ -12,13 +12,13 @@ const FeatureButton = ({
   feature,
 }: FeatureButton) => {
   const isSelected = id === featureSelected;
-  const borderWidth = isSelected ? "5px" : "2px";
-  const borderColor = isSelected ? "red" : "grey";
+  const borderWidth = isSelected ? "border-b-[5px] " : "border-b-[3px] ";
+  const borderColor = isSelected ? "border-red" : "border-grey";
 
   return (
     <button key={id} onClick={() => setFeatureSelected(id)}>
       <h4
-        className={`text-h4 text-grey px-14 pb-7 border-b-[${borderWidth}] border-solid border-${borderColor} hover:text-red`}
+        className={`text-h4 text-grey px-14 pb-7 ${borderWidth} border-solid ${borderColor} hover:text-red`}
       >
         {feature}
       </h4>

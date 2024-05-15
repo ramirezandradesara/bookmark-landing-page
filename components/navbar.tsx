@@ -54,7 +54,7 @@ const Navbar = () => {
         </ul>
         {/* TODO: hide in mobile */}
         <Button variant={"primary"} size={"lg"}>
-          Login
+          LOGIN
         </Button>
       </div>
     </nav>

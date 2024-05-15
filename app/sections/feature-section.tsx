@@ -9,7 +9,7 @@ const FeaturesSection = () => {
   const [featureSelected, setFeatureSelected] = useState<number>(1);
 
   return (
-    <section className="relative">
+    <section className="relative px-8">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center">
         <h2 className="text-[35px] font-semibold text-darkBlue">Features</h2>
         <p className="text-gray text-lg tracking-wide max-w-[565px] leading-relaxed text-center mt-10">
@@ -30,14 +30,14 @@ const FeaturesSection = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-screen-lg mx-auto my-36 flex items-center justify-between gap-2">
+      <div className="w-full max-w-screen-lg mx-auto mt-32 mb-36 flex items-center justify-between gap-10">
         <Image
           src={FEATURES[featureSelected - 1].imgSrc}
           alt="feature image"
           height={750}
           width={750}
           className="z-10"
-          // className="z-10 h-[450px] w-auto"
+          loading="lazy"
         />
         <div className="flex flex-col ">
           <h2 className="text-h2 font-semibold text-darkBlue tracking-wide leading-[70px] mb-4">
