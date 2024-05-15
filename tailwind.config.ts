@@ -11,7 +11,8 @@ const config = {
   prefix: "",
   theme: {
     screens: {
-      sm: "375px",
+      sm: "0px",
+      // sm: "375px",
       md: "768px",
       lg: "1440px",
       xl: "1280px",
@@ -24,7 +25,7 @@ const config = {
         h3: "30px",
         h4: "25px",
         accordionTitle: "18px",
-        accordionText: "16px"
+        accordionText: "16px",
       },
       colors: {
         gray: "hsl(229, 8%, 60%)",
