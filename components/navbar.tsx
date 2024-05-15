@@ -21,8 +21,8 @@ const Navbar = () => {
         height={45}
         className="h-auto w-[170px]"
       />
-      <div className="flex gap-16 items-center ">
-        <div className="md:hidden">
+      <div className="flex gap-16 items-center">
+        <div className="lg:hidden">
           {/* Icono de menú hamburguesa */}
           <button onClick={toggleMenu}>
             <svg
@@ -40,7 +40,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <ul className={"flex gap-16 sm:hidden md:flex"}>
+        <ul className={"flex gap-16 sm:hidden lg:flex"}>
           {NAVIGATION.map(({ href, name }, index) => (
             <li key={index}>
               <Link
@@ -53,7 +53,7 @@ const Navbar = () => {
           ))}
         </ul>
         {/* TODO: hide in mobile */}
-        <Button variant={"primary"} size={"lg"}>
+        <Button variant={"primary"} size={"lg"} className="hidden lg:flex">
           LOGIN
         </Button>
       </div>

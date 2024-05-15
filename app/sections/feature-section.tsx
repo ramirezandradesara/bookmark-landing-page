@@ -17,7 +17,7 @@ const FeaturesSection = () => {
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
         </p>
-        <div className="mt-20 flex">
+        <div className="mt-20 flex flex-col lg:flex-row ">
           {FEATURES.map(({ id, feature }) => (
             <FeatureButton
               key={id}
@@ -30,7 +30,7 @@ const FeaturesSection = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-screen-lg mx-auto mt-32 mb-36 flex items-center justify-between gap-10">
+      <div className="flex-col lg:flex-row w-full max-w-screen-lg mx-auto mt-20 lg:mt-32 mb-36 flex items-center justify-between gap-10">
         <Image
           src={FEATURES[featureSelected - 1].imgSrc}
           alt="feature image"
@@ -39,11 +39,11 @@ const FeaturesSection = () => {
           className="z-10"
           loading="lazy"
         />
-        <div className="flex flex-col ">
-          <h2 className="text-h2 font-semibold text-darkBlue tracking-wide leading-[70px] mb-4">
+        <div className="flex flex-col items-center lg:items-start">
+          <h2 className="text-h2 font-semibold text-darkBlue tracking-wide leading-[70px] mb-4 text-center lg:text-left">
             {FEATURES[featureSelected - 1].title}
           </h2>
-          <p className="text-gray text-lg tracking-wide max-w-[565px] leading-relaxed mb-10">
+          <p className="text-gray text-lg tracking-wide max-w-[565px] leading-relaxed mb-10 text-center lg:text-left">
             {FEATURES[featureSelected - 1].text}
           </p>
           <Button variant={"secondary"} size={"default"} className="w-max">
@@ -51,7 +51,7 @@ const FeaturesSection = () => {
           </Button>
         </div>
       </div>
-      <div className="custom-clamp h-[410px] bg-softBlue absolute left-0 -bottom-28 rounded-tr-[300px] rounded-br-[300px]" />
+      <div className="hidden lg:flex custom-clamp h-[410px] bg-softBlue absolute left-0 -bottom-28 rounded-tr-[300px] rounded-br-[300px]" />
     </section>
   );
 };

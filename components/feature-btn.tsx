@@ -18,7 +18,7 @@ const FeatureButton = ({
   return (
     <button key={id} onClick={() => setFeatureSelected(id)}>
       <h4
-        className={`text-h4 text-grey px-14 pb-7 ${borderWidth} border-solid ${borderColor} hover:text-red`}
+        className={`text-h4 text-grey px-14 pt-5 lg:pt-0 pb-5 lg:pb-7 ${borderWidth} border-solid ${borderColor} hover:text-red`}
       >
         {feature}
       </h4>
